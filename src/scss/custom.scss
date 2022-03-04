@@ -10,6 +10,8 @@ $theme-colors: (
   success: #4000b1,
   secondary: #c1c1c1
 );
+$h6-font-size: 0.8rem;
+
 $border-color: #4000b1;
 .nav-title{
     margin-right: 1rem;
@@ -44,7 +46,7 @@ $border-color: #4000b1;
 .search-show{
     // visibility: visible;
     z-index: 100;
-    width: 300px !important;
+    width: calc(100% - 305px) !important;
     transition: width 0.4s ease-in-out !important;
 }
 
@@ -78,7 +80,7 @@ $utilities: map-merge(
         (
           values: map-merge(
             map-get(map-get($utilities, "width"), "values"),
-            (100: 300px, 75: 500px),
+            (100: 240px, 75: 500px),
           ),
         ),
       ),
@@ -96,6 +98,7 @@ $btn-link-color: black;
 
 .nav-link{
     border: 3px solid transparent;
+    
     &:hover{
         border-bottom: 3px solid #4000b1;
       color: $navbar-light-hover-color;

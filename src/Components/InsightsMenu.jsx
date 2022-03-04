@@ -15,7 +15,7 @@ function InsightsMenu(props) {
                                 <FontAwesomeIcon icon={faGreaterThan} size="xs" />
                             </Col>
                             <Col md="auto">
-                                <Nav.Link eventKey="Tab1" style={{"cursor":"pointer"}} >{props.tab[0]}</Nav.Link>
+                                <Nav.Link eventKey="Tab1" className='h6' style={{"cursor":"pointer"}} >{props.tab[0]}</Nav.Link>
                             </Col>
                         </Row>
                        {/* {tab.map((a) => {
@@ -26,7 +26,7 @@ function InsightsMenu(props) {
                                 <FontAwesomeIcon icon={faGreaterThan} size="xs" />
                             </Col>
                             <Col md="auto">
-                                <Nav.Link eventKey="Tab2" style={{"cursor":"pointer"}} >{props.tab[1]}</Nav.Link>
+                                <Nav.Link eventKey="Tab2" className='h6' style={{"cursor":"pointer"}} >{props.tab[1]}</Nav.Link>
                             </Col>
                         </Row>
                         <Row className='my-2  align-items-center custom-row'>
@@ -34,7 +34,7 @@ function InsightsMenu(props) {
                                 <FontAwesomeIcon icon={faGreaterThan} size="xs" />
                             </Col>
                             <Col md="auto">
-                                <Nav.Link eventKey="Tab3" style={{"cursor":"pointer"}} >{props.tab[2]}</Nav.Link>
+                                <Nav.Link eventKey="Tab3" className='h6' style={{"cursor":"pointer"}} >{props.tab[2]}</Nav.Link>
                             </Col>
                         </Row>
                         <Row className='my-2  align-items-center custom-row'>
@@ -42,7 +42,7 @@ function InsightsMenu(props) {
                                 <FontAwesomeIcon icon={faGreaterThan} size="xs" />
                             </Col>
                             <Col md="auto">
-                                <Nav.Link eventKey="Tab4" style={{"cursor":"pointer"}} >{props.tab[3]}</Nav.Link>
+                                <Nav.Link eventKey="Tab4" className='h6' style={{"cursor":"pointer"}} >{props.tab[3]}</Nav.Link>
                             </Col>
                         </Row>
                     </Nav>

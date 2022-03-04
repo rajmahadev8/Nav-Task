@@ -31,7 +31,7 @@
 
 .search-show {
   z-index: 100;
-  width: 300px !important;
+  width: calc(100% - 305px) !important;
   transition: width 0.4s ease-in-out !important;
 }
 
@@ -200,7 +200,7 @@ h5, .h5 {
 }
 
 h6, .h6 {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 p {
@@ -6348,7 +6348,7 @@ textarea.form-control-lg {
 }
 
 .w-100 {
-  width: 300px !important;
+  width: 240px !important;
 }
 
 .w-auto {
@@ -10811,7 +10811,7 @@ h5, .h5 {
 }
 
 h6, .h6 {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 p {
@@ -16959,7 +16959,7 @@ textarea.form-control-lg {
 }
 
 .w-100 {
-  width: 300px !important;
+  width: 240px !important;
 }
 
 .w-auto {
