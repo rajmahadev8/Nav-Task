@@ -1,0 +1,177 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/mixins/_breakpoints";
+
+
+
+$theme-colors: (
+  
+  success: #4000b1,
+  secondary: #c1c1c1
+);
+$h6-font-size: 0.8rem;
+.h6{
+    padding-left: 0!important;
+}
+$border-color: #4000b1;
+.nav-title{
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.hamburger{
+    display: flex;
+}
+.search-icon{
+    z-index: 200;
+}
+.language{
+    display: flex;
+}
+@include media-breakpoint-down(xl) {
+     .nav-link{
+     margin-left: 0 !important;
+     margin-right: 0 !important;
+    }
+    
+  }
+  @include media-breakpoint-down(lg){
+      .hamburger{
+          display: none !important;
+      }
+  } 
+  
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+      -webkit-appearance:none;
+    }
+    .search-hide{
+        // visibility: hidden;
+        width: 0px !important;
+        background-color: transparent !important;
+        transition: width 0.4s ease-in-out !important;
+        // z-index: -10;
+    }
+    
+    .search-show{
+        // visibility: visible;
+        z-index: 100;
+        width: calc(100% - 305px) !important;
+        transition: width 0.4s ease-in-out !important;
+    }
+
+    @include media-breakpoint-down(md){
+        .language{
+            display: none !important;
+        }
+        .search-hide{
+            position: relative !important;
+            top:0 !important;
+            right: 0 !important;
+        }
+        .search-show{
+            position: relative !important;
+            top:0 !important;
+            right: 0 !important;
+            width: 100%!important;
+            padding: 10px !important;
+            border-radius: 8px !important;
+        }
+        .search-bar-form{
+            justify-content:end!important;
+        }
+
+    }
+    @include media-breakpoint-down(sm){
+        .sign-in{
+            display: none ;
+        }
+    }
+Button{
+    &:focus{
+        box-shadow:none !important;
+    }
+}
+
+
+//Changing Height of Navbar    
+$utilities: map-merge(
+    $utilities,
+    (
+      "height": map-merge(
+        map-get($utilities, "height"),
+        (
+          values: map-merge(
+            map-get(map-get($utilities, "height"), "values"),
+            (75: 65px),
+          ),
+        ),
+      ),
+    )
+  );
+  $utilities: map-merge(
+    $utilities,
+    (
+      "width": map-merge(
+        map-get($utilities, "width"),
+        (
+          values: map-merge(
+            map-get(map-get($utilities, "width"), "values"),
+            (100: 240px, 75: 500px),
+          ),
+        ),
+      ),
+    )
+  );
+
+//   $dropdown-min-width: 20rem;
+
+  $dropdown-padding-y:0;
+//Border on Hover and color
+// $navbar-light-color:purple;
+// $navbar-light-hover-color: #4000b1;
+// $navbar-light-active-color: #4000b1;
+$btn-link-color: black;
+
+.nav-link{
+    border: 3px solid transparent;
+    
+    &:hover{
+        border-bottom: 3px solid #4000b1;
+      color: $navbar-light-hover-color;
+    }
+}
+  .dropdown {
+    //   transition: 0.3s all ease;
+    &:hover .nav-link{
+      border-bottom: 3px solid #4000b1;
+      color: $navbar-light-hover-color;
+    }
+    //  &:active {
+    //     color: $navbar-light-active-color;
+    //     border-bottom: 3px solid #4000b1;
+    //  }
+}
+
+
+
+
+//Extend Row class
+.row-nav {
+    @extend .row;
+    background-color: #c1c1c1;
+    color: #ffffff;
+    $link-color:   #4000b1;                  
+    $link-decoration:   null;
+
+    position: absolute;
+    width: 400px;
+    top: 95%;
+    left: 370px;
+ } 
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap/scss/utilities";
+
