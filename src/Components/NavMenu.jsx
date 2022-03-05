@@ -26,8 +26,8 @@ function NavMenu(props) {
            {(props.title!=="Solutions"&&props.title!=="Carrers"&&props.title!=="Contact Us"&&props.title!=="Insights") &&
             (<Dropdown.Menu show={showDropdown} className="border-0 dropdown-menu">
                 <ListGroup>
-                    <ListGroup.Item className='px-2 py-4' >
-                        <Container>
+                    <ListGroup.Item className='px-2 py-4 responsive-list-menu' >
+                        <Container className='custom-container'>
                             {/* {console.log(subTitle)} */}
 
                         {props.title!=="Insights" &&(Object.values(subTitle).map((e)=>{return <SubMenu key={e} menu={e}/>}))}
@@ -38,8 +38,8 @@ function NavMenu(props) {
                 {/* {props.title==="Insights" && <InsightsMenu/> } */}
             {props.title==="Insights" &&(<Dropdown.Menu show={showDropdown} className="dropdown-insights border-0 ">
                 <ListGroup>
-                    <ListGroup.Item className='px-2 py-4' >
-                        <Container>
+                    <ListGroup.Item className='px-2 py-4 responsive-list-menu' >
+                        <Container className='custom-container'>
                             {/* {console.log(subTitle)} */}
                             {props.title==="Insights" && (<InsightsMenu tab={subTitle}/>) }
                         </Container>

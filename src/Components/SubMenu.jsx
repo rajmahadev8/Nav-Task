@@ -8,7 +8,7 @@ function SubMenu(props) {
     return (
         <>
             <Row className='my-3  align-items-center custom-row'>
-                <Col xs={1}><FontAwesomeIcon icon={faGreaterThan} size="xs" /></Col>
+                <Col xs={1} className="bullet"><FontAwesomeIcon icon={faGreaterThan} size="xs" /></Col>
                 <Col md="auto" className=" p-0 ms-3"><Nav.Link className="h6" href="#">{menu}</Nav.Link></Col>
             </Row>
         </>
