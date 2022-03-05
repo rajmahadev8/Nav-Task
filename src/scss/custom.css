@@ -1,3 +1,7 @@
+.h6 {
+  padding-left: 0 !important;
+}
+
 .nav-title {
   margin-right: 1rem;
   margin-left: 1rem;
@@ -13,6 +17,12 @@
   z-index: 200;
 }
 
+.language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media (max-width: 1199.98px) {
   .nav-link {
     margin-left: 0 !important;
@@ -24,6 +34,13 @@
   .hamburger {
     display: none !important;
   }
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
 }
 
 .search-hide {
@@ -38,6 +55,70 @@
   width: calc(100% - 305px) !important;
   -webkit-transition: width 0.4s ease-in-out !important;
   transition: width 0.4s ease-in-out !important;
+}
+
+.navbar {
+  height: 85px;
+}
+
+@media (max-width: 767.98px) {
+  .language {
+    display: none !important;
+  }
+  .search-hide {
+    position: relative !important;
+    top: 0 !important;
+    right: 0 !important;
+  }
+  .search-show {
+    position: relative !important;
+    top: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    padding: 10px !important;
+    border-radius: 8px !important;
+  }
+  .search-bar-form {
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: end !important;
+  }
+  .navbar {
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .language {
+    display: none !important;
+  }
+  .search-hide {
+    position: relative !important;
+    top: 0 !important;
+    right: 0 !important;
+  }
+  .search-show {
+    position: relative !important;
+    top: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    padding: 10px !important;
+    border-radius: 8px !important;
+  }
+  .search-bar-form {
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: end !important;
+  }
+  .navbar {
+    height: auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .sign-in {
+    display: none;
+  }
 }
 
 Button:focus {

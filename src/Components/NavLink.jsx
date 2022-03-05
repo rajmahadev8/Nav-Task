@@ -13,12 +13,12 @@ function NavLink() {
         {title:"Contact Us", subTitles:""}
     ]
     // const [isShown, setIsShown] = useState(false);
-
+    
     return (
         <>
-            <Navbar.Toggle aria-controls="navbarScroll" className='border-0'/>
-            <Navbar.Brand href="#" className='px-4'>Navbar</Navbar.Brand>
+           
             <Navbar.Collapse id="navbarScroll" >
+       
 
                 <Nav
                     className="me-auto my-2 my-lg-0"
@@ -28,12 +28,12 @@ function NavLink() {
                     {/* <Nav.Link href="#solutions" className='mx-4'>Solutions</Nav.Link> */}
                     {/* <div className="tab1">
                         <Nav.Link href="#insights" className='mx-4' onMouseOver={() => setIsShown(true)}
-                            onClick={() => setIsShown(false)}
+                        onClick={() => setIsShown(false)}
                         >Insights</Nav.Link>
                         {isShown && (
                             <SubMenu />
-                        )}
-                    </div> */}
+                            )}
+                        </div> */}
 
                     {/* <Nav.Link href="#investors" className='mx-4' onMouseOver={() => setShowDropdown(true)}
                         onMouseOut={()=> setShowDropdown(false)}>Investors</Nav.Link>
@@ -46,13 +46,13 @@ function NavLink() {
                     {/* 
                     <Nav.Link href="#carrers" className='mx-4'>Carrers</Nav.Link>
                     <Nav.Link href="#about" className='mx-4'>About</Nav.Link>
-                    <Nav.Link href="#contact" className='mx-4'>Contact Us</Nav.Link> */}
+                <Nav.Link href="#contact" className='mx-4'>Contact Us</Nav.Link> */}
 
 
 
 
                 </Nav>
-                <RightHeader />
+                <RightHeader/>
             </Navbar.Collapse>
         </>
     )

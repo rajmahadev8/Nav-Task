@@ -11,7 +11,9 @@ $theme-colors: (
   secondary: #c1c1c1
 );
 $h6-font-size: 0.8rem;
-
+.h6{
+    padding-left: 0!important;
+}
 $border-color: #4000b1;
 .nav-title{
     margin-right: 1rem;
@@ -23,33 +25,100 @@ $border-color: #4000b1;
 .search-icon{
     z-index: 200;
 }
+.language{
+    display: flex;
+}
 @include media-breakpoint-down(xl) {
      .nav-link{
      margin-left: 0 !important;
      margin-right: 0 !important;
     }
+    
   }
   @include media-breakpoint-down(lg){
       .hamburger{
           display: none !important;
       }
+      
   } 
-
-.search-hide{
-    // visibility: hidden;
-    width: 0px !important;
-    background-color: transparent !important;
-    transition: width 0.4s ease-in-out !important;
-    // z-index: -10;
-}
-
-.search-show{
-    // visibility: visible;
-    z-index: 100;
-    width: calc(100% - 305px) !important;
-    transition: width 0.4s ease-in-out !important;
-}
-
+  
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+      -webkit-appearance:none;
+    }
+    .search-hide{
+        // visibility: hidden;
+        width: 0px !important;
+        background-color: transparent !important;
+        transition: width 0.4s ease-in-out !important;
+        // z-index: -10;
+    }
+    
+    .search-show{
+        // visibility: visible;
+        z-index: 100;
+        width: calc(100% - 305px) !important;
+        transition: width 0.4s ease-in-out !important;
+    }
+    .navbar{
+        height: 85px;
+    }
+    @include media-breakpoint-down(md){
+        .language{
+            display: none !important;
+        }
+        .search-hide{
+            position: relative !important;
+            top:0 !important;
+            right: 0 !important;
+        }
+        .search-show{
+            position: relative !important;
+            top:0 !important;
+            right: 0 !important;
+            width: 100%!important;
+            padding: 10px !important;
+            border-radius: 8px !important;
+        }
+        .search-bar-form{
+            justify-content:end!important;
+        }
+        .navbar{
+            height: auto;
+        }
+       
+    }
+    @include media-breakpoint-between(md, lg){
+        .language{
+            display: none !important;
+        }
+        .search-hide{
+            position: relative !important;
+            top:0 !important;
+            right: 0 !important;
+        }
+        .search-show{
+            position: relative !important;
+            top:0 !important;
+            right: 0 !important;
+            width: 100%!important;
+            padding: 10px !important;
+            border-radius: 8px !important;
+        }
+        .search-bar-form{
+            justify-content:end!important;
+        }
+        .navbar{
+            height: auto;
+        }
+    }
+    @include media-breakpoint-down(sm){
+        .sign-in{
+            display: none ;
+        }
+    }
 Button{
     &:focus{
         box-shadow:none !important;
