@@ -24,7 +24,7 @@ function NavMenu(props) {
             </Dropdown.Toggle>
            
            {(props.title!=="Solutions"&&props.title!=="Carrers"&&props.title!=="Contact Us"&&props.title!=="Insights") &&
-            (<Dropdown.Menu show={showDropdown} className="w-100 border-0 ">
+            (<Dropdown.Menu show={showDropdown} className="border-0 dropdown-menu">
                 <ListGroup>
                     <ListGroup.Item className='px-2 py-4' >
                         <Container>
@@ -36,7 +36,7 @@ function NavMenu(props) {
                 </ListGroup>
             </Dropdown.Menu>)}
                 {/* {props.title==="Insights" && <InsightsMenu/> } */}
-            {props.title==="Insights" &&(<Dropdown.Menu show={showDropdown} className="w-75 border-0 ">
+            {props.title==="Insights" &&(<Dropdown.Menu show={showDropdown} className="dropdown-insights border-0 ">
                 <ListGroup>
                     <ListGroup.Item className='px-2 py-4' >
                         <Container>

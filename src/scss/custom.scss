@@ -28,6 +28,12 @@ $border-color: #4000b1;
 .language{
     display: flex;
 }
+.dropdown-menu{
+    width: 240px;
+}
+.dropdown-insights{
+    width: 500px;
+}
 @include media-breakpoint-down(xl) {
      .nav-link{
      margin-left: 0 !important;
@@ -88,6 +94,15 @@ $border-color: #4000b1;
         .navbar{
             height: auto;
         }
+        .dropdown-menu{
+            width: 100%;
+        }
+        .row > *, .row-nav > *{
+            width: auto!important;
+        }
+        .dropdown-insights{
+            width: auto;
+        }
        
     }
     @include media-breakpoint-between(md, lg){
@@ -113,6 +128,16 @@ $border-color: #4000b1;
         .navbar{
             height: auto;
         }
+        .dropdown-menu{
+            width: 100%;
+        }
+        .row > *, .row-nav > *{
+            width: auto!important;
+        }
+        .dropdown-insights{
+            width: auto;
+        }
+       
     }
     @include media-breakpoint-down(sm){
         .sign-in{
