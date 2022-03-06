@@ -9,10 +9,10 @@ function InsightsMenu(props) {
         <Tab.Container id="left-tabs-example" defaultActiveKey="Tab1">
             <Row>
                 <Col sm={5}>
-                    <Nav className="flex-column">
+                    {/* <Nav className="flex-column"> */}
                         <Row className='my-2  align-items-center custom-row'>
                             <Col md="auto">
-                                <FontAwesomeIcon icon={faGreaterThan} size="xs" />
+                                <FontAwesomeIcon  className="bullet" icon={faGreaterThan} size="xs" />
                             </Col>
                             <Col md="auto">
                                 <Nav.Link eventKey="Tab1" className='h6' style={{"cursor":"pointer"}} >{props.tab[0]}</Nav.Link>
@@ -21,9 +21,9 @@ function InsightsMenu(props) {
                        {/* {tab.map((a) => {
                           return <InsightRow tab={a}/>
                         })} */}
-                        <Row className='my-2  align-items-center custom-row'>
+                        <Row className='my-2 align-items-center custom-row'>
                             <Col md="auto">
-                                <FontAwesomeIcon icon={faGreaterThan} size="xs" />
+                                <FontAwesomeIcon className="bullet" icon={faGreaterThan} size="xs" />
                             </Col>
                             <Col md="auto">
                                 <Nav.Link eventKey="Tab2" className='h6' style={{"cursor":"pointer"}} >{props.tab[1]}</Nav.Link>
@@ -31,7 +31,7 @@ function InsightsMenu(props) {
                         </Row>
                         <Row className='my-2  align-items-center custom-row'>
                             <Col md="auto">
-                                <FontAwesomeIcon icon={faGreaterThan} size="xs" />
+                                <FontAwesomeIcon className="bullet" icon={faGreaterThan} size="xs" />
                             </Col>
                             <Col md="auto">
                                 <Nav.Link eventKey="Tab3" className='h6' style={{"cursor":"pointer"}} >{props.tab[2]}</Nav.Link>
@@ -39,15 +39,15 @@ function InsightsMenu(props) {
                         </Row>
                         <Row className='my-2  align-items-center custom-row'>
                             <Col md="auto">
-                                <FontAwesomeIcon icon={faGreaterThan} size="xs" />
+                                <FontAwesomeIcon className="bullet" icon={faGreaterThan} size="xs" />
                             </Col>
                             <Col md="auto">
                                 <Nav.Link eventKey="Tab4" className='h6' style={{"cursor":"pointer"}} >{props.tab[3]}</Nav.Link>
                             </Col>
                         </Row>
-                    </Nav>
+                    {/* </Nav> */}
                 </Col>
-                <Col sm={6}>
+                <Col sm={6} className="sub-insights-menu">
                     <Tab.Content>
                         <Tab.Pane eventKey="Tab1">
                             <Card className='border-0'>

@@ -22,11 +22,12 @@ function NavMenu(props) {
                 <Nav.Link className="nav-title" href={`#${props.title}`}>{props.title}</Nav.Link>
 
             </Dropdown.Toggle>
-           
+            
+          
            {(props.title!=="Solutions"&&props.title!=="Carrers"&&props.title!=="Contact Us"&&props.title!=="Insights") &&
             (<Dropdown.Menu show={showDropdown} className="border-0 dropdown-menu">
                 <ListGroup>
-                    <ListGroup.Item className='px-2 py-4 responsive-list-menu' >
+                    <ListGroup.Item className='px-2 py-2 responsive-list-menu' >
                         <Container className='custom-container'>
                             {/* {console.log(subTitle)} */}
 
@@ -38,7 +39,7 @@ function NavMenu(props) {
                 {/* {props.title==="Insights" && <InsightsMenu/> } */}
             {props.title==="Insights" &&(<Dropdown.Menu show={showDropdown} className="dropdown-insights border-0 ">
                 <ListGroup>
-                    <ListGroup.Item className='px-2 py-4 responsive-list-menu' >
+                    <ListGroup.Item className='px-2 custom-list-insights responsive-list-menu' >
                         <Container className='custom-container'>
                             {/* {console.log(subTitle)} */}
                             {props.title==="Insights" && (<InsightsMenu tab={subTitle}/>) }

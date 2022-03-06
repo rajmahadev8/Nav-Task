@@ -4,7 +4,6 @@
 @import "../../node_modules/bootstrap/scss/mixins/_breakpoints";
 
 
-
 $theme-colors: (
   
   success: #4000b1,
@@ -33,6 +32,19 @@ $border-color: #4000b1;
 }
 .dropdown-insights{
     width: 500px;
+}
+.custom-list-insights{
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+}
+.right-header-mobile{
+    display: none ;
+}
+.right-header{
+    display: flex ;
+}
+.menu-search{
+    display: none !important;
 }
 @include media-breakpoint-down(xl) {
      .nav-link{
@@ -77,16 +89,17 @@ $border-color: #4000b1;
         }
         .search-hide{
             position: relative !important;
-            top:0 !important;
-            right: 0 !important;
+            top:17px !important;
+            // right: 0 !important;
+            padding: 10px !important;
         }
         .search-show{
-            position: relative !important;
-            top:0 !important;
-            right: 0 !important;
-            width: 100%!important;
+            position: absolute !important;
+            top:17px !important;
+            // right: 0 !important;
+            // width: 100%!important;
             padding: 10px !important;
-            border-radius: 8px !important;
+            // border-radius: 8px !important;
         }
         .search-bar-form{
             justify-content:end!important;
@@ -125,24 +138,41 @@ $border-color: #4000b1;
            .bullet{
                display: none!important;
            }
-       
+           .sub-insights-menu{
+            display: none !important;
+           }
+           .custom-list-insights{
+            padding-top: 0.5rem !important;
+            padding-bottom: 0.5rem !important;
+        }
+        .right-header-mobile{
+            display: flex ;
+        }
+        .right-header{
+            display: none;
+        }
+        .menu-search{
+            display: none !important;
+        }
     }
     @include media-breakpoint-between(md, lg){
         .language{
             display: none !important;
         }
         .search-hide{
-            position: relative !important;
-            top:0 !important;
-            right: 0 !important;
+            position: absolute !important;
+            top:17px !important;
+            // right: 0 !important;
+            padding: 10px !important;
+
         }
         .search-show{
-            position: relative !important;
-            top:0 !important;
-            right: 0 !important;
-            width: 100%!important;
+            position: absolute !important;
+            top:17px !important;
+            // right: 0 !important;
+            // width: 100%!important;
             padding: 10px !important;
-            border-radius: 8px !important;
+            // border-radius: 8px !important;
         }
         .search-bar-form{
             justify-content:end!important;
@@ -180,16 +210,55 @@ $border-color: #4000b1;
        .bullet{
            display: none!important;
        }
+       .sub-insights-menu{
+           display: none !important;
+       }
+       .custom-list-insights{
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+    .right-header-mobile{
+        display: flex ;
+    }
+    .right-header{
+        display: none;
+    }
+    .menu-search{
+        display: none !important;
+    }
     }
     @include media-breakpoint-down(sm){
         .sign-in{
             display: none ;
+        }
+        .search-hide{
+            position: relative !important;
+            top:0 !important;
+            right: 0 !important;
+            padding: 10px !important;
+            // border: 1px solid !important;
+        }
+        .search-show{
+            position: relative !important;
+            top:0 !important;
+            right: 0 !important;
+            width: 100%!important;
+            padding: 10px !important;
+            border: 1px solid #a1a1a1!important;
+            // border-radius: 8px !important;
+        }
+        .nav-search{
+            display: none !important;
+        }
+        .menu-search{
+            display: block !important;
         }
     }
 Button{
     &:focus{
         box-shadow:none !important;
     }
+    
 }
 
 

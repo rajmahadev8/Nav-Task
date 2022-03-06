@@ -3,7 +3,7 @@ import { Button, Nav, Form, FormControl } from 'react-bootstrap';
 import { faMagnifyingGlass, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from 'react';
-function RightHeader() {
+function RightHeader(props) {
     const [shown, setShown] = useState("hide")
     const [search, setSearch] = useState(faMagnifyingGlass)
     const show=()=>{
@@ -16,19 +16,17 @@ function RightHeader() {
             setSearch(faMagnifyingGlass);
         }
     }
+    const {className} = props;
   return (
    <>
-            <div className="language mx-3">
-                <Nav.Link href="#EN" className='border-3 border-end link-secondary'>EN</Nav.Link>
-                <Nav.Link href="#FR" className='link-secondary' >FR</Nav.Link>
-            </div>
-          <Form className="d-flex search-bar-form">
+            
+          <Form className={`search-bar-form ${className}`} >
               <div className='d-flex justify-content-end'>
 
             <FormControl
               type="search"
               placeholder="Search on this site"
-              className={`me-2 border-0 search-${shown} search`}
+              className={`me-2 border-0 search-${shown} search nav-search`}
               style={{"position": "absolute",
                 "padding": "15px",
                 "top":"16%",
