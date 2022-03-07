@@ -6,6 +6,7 @@ import { useState } from 'react';
 function RightHeader(props) {
     const [shown, setShown] = useState("hide")
     const [search, setSearch] = useState(faMagnifyingGlass)
+
     const show=()=>{
         if(shown==="hide"){
             setShown("show");
@@ -34,10 +35,19 @@ function RightHeader(props) {
                 "borderRadius": "36px"}}
               aria-label="Search"
               />
+              <FormControl
+              type="search"
+              placeholder="Search on this site"
+              className={`me-2 mobileNav-${shown}`}
+              style={{"borderRadius": "36px"}}
+              aria-label="Search"
+              />
+                
              <div className="border-end border-2  d-flex align-items-center h-75 pe-auto">
                 <Button className='search-icon' onClick={show}><FontAwesomeIcon icon={search} size="lg"/></Button>
              </div>
-              </div>
+                </div>
+    
             <Button variant=""  className='sign-in mx-2'>SignIn</Button>
           </Form>
    </>

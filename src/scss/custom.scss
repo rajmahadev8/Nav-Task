@@ -46,6 +46,23 @@ $border-color: #4000b1;
 .menu-search{
     display: none !important;
 }
+.mobile-search{
+    display: none;
+}
+.mobileNav-show{
+    position: absolute !important;
+    top: 81px !important;
+    right: 4px !important;
+    width: 0% !important;
+    padding: 10px !important;
+    border: 1px solid #a1a1a1 !important;
+    display: none !important;
+    transition: width 0.4s ease-in-out !important;
+}
+.mobileNav-hide{
+    display: none !important;
+    width: 0% !important;
+}
 @include media-breakpoint-down(xl) {
      .nav-link{
      margin-left: 0 !important;
@@ -252,6 +269,27 @@ $border-color: #4000b1;
         }
         .menu-search{
             display: block !important;
+        }
+        .mobile-search{
+            display: block;
+        }
+        .search-home{
+            display: none !important;
+        }
+        .mobileNav-show{
+            position: absolute !important;
+            top: 81px !important;
+            right: 4px !important;
+            width: 93% !important;
+            padding: 10px !important;
+            border: 1px solid #a1a1a1 !important;
+            display: block!important;
+        }
+        .mobileNav-hide{
+            display: block !important;
+            width: 0% !important;
+            position: absolute !important;
+            z-index: -100;
         }
     }
 Button{

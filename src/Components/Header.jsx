@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import {Container, Navbar, Button } from 'react-bootstrap';
 import NavLink from './NavLink';
-import RightHeader from './RightHeader';
 function Header() {
   
   return (<>
@@ -19,9 +18,8 @@ function Header() {
                 <Navbar.Brand href="#" className='px-4'>Navbar</Navbar.Brand>
             
             </div>
-            <RightHeader className="right-header-mobile"/>
+           
           <NavLink/>
-
         </Container>
     </Navbar>
   </>
