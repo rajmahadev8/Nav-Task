@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Nav, Form, FormControl } from 'react-bootstrap';
+import { Button, Form, FormControl } from 'react-bootstrap';
 import { faMagnifyingGlass, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from 'react';
@@ -20,10 +20,11 @@ function RightHeader(props) {
     const {className} = props;
   return (
    <>
-            
+            {/* Form control for search */}
           <Form className={`search-bar-form ${className}`} >
               <div className='d-flex justify-content-end'>
 
+            {/* Form control for normal view */}
             <FormControl
               type="search"
               placeholder="Search on this site"
@@ -35,6 +36,7 @@ function RightHeader(props) {
                 "borderRadius": "36px"}}
               aria-label="Search"
               />
+              {/* Form control for Mobile view */}
               <FormControl
               type="search"
               placeholder="Search on this site"
@@ -42,12 +44,13 @@ function RightHeader(props) {
               style={{"borderRadius": "36px"}}
               aria-label="Search"
               />
-                
+              
+              {/* Search icon and cross icon onclick function for search bar open and close*/}
              <div className="border-end border-2  d-flex align-items-center h-75 pe-auto">
                 <Button className='search-icon' onClick={show}><FontAwesomeIcon icon={search} size="lg"/></Button>
              </div>
                 </div>
-    
+
             <Button variant=""  className='sign-in mx-2'>SignIn</Button>
           </Form>
    </>

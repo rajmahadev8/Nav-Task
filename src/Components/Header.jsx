@@ -9,17 +9,20 @@ function Header() {
   return (<>
     <Navbar bg="light" expand="lg" className='font-family-sans-serif' >
     <Container fluid>
-      {/* Left Header */}
+      {/* --------- Left Header -----------*/}
             <div className="border-end border-2 hamburger align-items-center h-75 pe-auto">
-                <Button><FontAwesomeIcon icon={faBars} className="px-3" size="lg" /></Button>
+                <Button> 
+                  <FontAwesomeIcon icon={faBars} className="px-3" size="lg" />
+                </Button>
             </div>
             <div className="leftHeader">
                 <Navbar.Toggle aria-controls="navbarScroll" className='border-0'/>
                 <Navbar.Brand href="#" className='px-4'>Navbar</Navbar.Brand>
-            
             </div>
            
+           {/*------ Navbar menu links-------- */}
           <NavLink/>
+
         </Container>
     </Navbar>
   </>
