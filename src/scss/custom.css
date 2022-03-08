@@ -71,6 +71,10 @@
   width: 0% !important;
 }
 
+.dropdown-caret {
+  display: none;
+}
+
 @media (max-width: 1199.98px) {
   .nav-link {
     margin-left: 0 !important;
@@ -179,6 +183,9 @@ input[type="search"]::-webkit-search-results-decoration {
   .menu-search {
     display: none !important;
   }
+  .dropdown-caret {
+    display: inline-block;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -250,6 +257,9 @@ input[type="search"]::-webkit-search-results-decoration {
   }
   .menu-search {
     display: none !important;
+  }
+  .dropdown-caret {
+    display: inline-block;
   }
 }
 

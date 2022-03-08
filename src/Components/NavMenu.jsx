@@ -31,7 +31,7 @@ function NavMenu(props) {
                 id="dropdown-basic"
                 bsPrefix="p-0"
             >
-                <Nav.Link className="nav-title" href={`#${props.title}`}>{props.title} <FontAwesomeIcon icon={dropdown} size="xs" /></Nav.Link>
+                <Nav.Link className="nav-title" href={`#${props.title}`}>{props.title} <FontAwesomeIcon className='dropdown-caret' icon={dropdown} size="xs" /></Nav.Link>
 
             </Dropdown.Toggle>
             

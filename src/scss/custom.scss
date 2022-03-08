@@ -63,6 +63,9 @@ $border-color: #4000b1;
     display: none !important;
     width: 0% !important;
 }
+.dropdown-caret{
+    display: none;
+}
 @include media-breakpoint-down(xl) {
      .nav-link{
      margin-left: 0 !important;
@@ -171,6 +174,9 @@ $border-color: #4000b1;
         .menu-search{
             display: none !important;
         }
+        .dropdown-caret{
+            display: inline-block;
+        }
     }
     @include media-breakpoint-between(md, lg){
         .language{
@@ -242,6 +248,9 @@ $border-color: #4000b1;
     }
     .menu-search{
         display: none !important;
+    }
+    .dropdown-caret{
+        display: inline-block;
     }
     }
     @include media-breakpoint-down(sm){
